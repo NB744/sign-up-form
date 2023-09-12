@@ -1,0 +1,153 @@
+html, body {
+    margin: 0;
+    height: 100%;
+}
+
+.flex-wrapper{
+display:flex;
+}
+
+#form-wrapper{
+margin: 0;
+padding: 0;
+height: 100vh;
+}
+
+#form-img{
+width: 100%;
+height: 100%;
+object-fit: cover;
+}
+
+#form-image-wrapper{
+width: 45vw;
+/*height: 100vh;*/
+background-image: url(/img/nature.jpg);
+background-size: cover;
+background-repeat: no-repeat;
+}
+
+#form-title-wrapper{
+padding: 20px;
+margin: 25px 0px;
+display: flex;
+align-items: center;
+justify-content: center;
+gap: 20px;
+background-color: rgba(0, 0, 0, 0.4);
+}
+
+#form-title-markup{
+color: #F5E000;
+font-size: xxx-large;
+}
+
+#form-title-logo{
+width: 10vh;
+}
+
+#image-attribution-wrapper{
+display: flex;
+justify-content: flex-end;
+align-items: flex-end !important;
+height: inherit;
+}
+
+#user-signup-form{
+display: flex;
+flex-direction: column;
+flex-wrap: wrap;
+}
+
+#form-form-wrapper{
+width: -webkit-fill-available;
+/* height: 100vh;*/
+flex-direction: column;
+padding: 40px;
+background: #F9FAFB;
+}
+
+#form-form-markup{
+font-weight: bold;
+font-size: x-large;
+}
+
+#form-form-only-wrapper{
+background-color: #FFFFFF;
+box-shadow: 0px 0px 10px grey;
+margin: 10px -40px;
+padding: 40px 40px;
+}
+
+#form-main-wrapper{
+display: grid;
+grid-template-columns: 0.3fr 0.3fr;
+grid-column-gap: 100px;
+grid-row-gap: 20px;
+width: 100%;
+}
+
+.form-inp-wrapper{
+display: grid;
+grid-template-columns: 1fr;
+
+}
+
+input{
+height: 35px;
+}
+
+input:focus{
+box-shadow: 0px 0px 10px grey;
+}
+
+.form-inp-wrapper .error{
+border: solid red 1px; 
+}
+
+#form-main-wrapper::after {
+content: "*Passwords do not match";
+color:red;
+margin-top: -15px;
+}
+
+#form-form-action-wrapper{
+margin-top: 40px;
+display: flex;
+flex-wrap: wrap;
+flex-direction: column;
+}
+
+#form-form-action-wrapper button{
+width: fit-content;
+padding: 15px 20px;
+border-radius: 5px;
+margin-bottom: 20px;
+background-color: #596D48;
+color: #fff;
+font-size: larger;
+transition: all 0.7s ease-in-out;
+}
+
+#form-form-action-wrapper button:hover{
+transform: scale(1.1);
+background-color: #519617;
+cursor: pointer;
+}
+
+#log-in-a{
+color: #596D48;
+text-decoration: none;
+}
+
+#image-attribution{
+    position: absolute;
+    bottom: 0px;
+    color: rgb(197, 198, 201);
+    padding: 20px;
+    text-align: center;
+}
+
+#image-attribution a{
+    color: rgb(197, 198, 201);
+}
