@@ -105,11 +105,22 @@ box-shadow: 0px 0px 10px grey;
 border: solid red 1px; 
 }
 
+#password-match-span{
+    color: green;
+}
+
+#password-match-span.pwd-non-matching{
+    color: red;
+}
+
+/*
 #form-main-wrapper::after {
 content: "*Passwords do not match";
 color:red;
 margin-top: -15px;
+display: none;
 }
+*/
 
 #form-form-action-wrapper{
 margin-top: 40px;

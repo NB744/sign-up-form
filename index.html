@@ -6,6 +6,7 @@
   <title>Yet Another Sign-Up Form!</title>
   <link rel="icon" type="image/x-icon" href="img/sign_up_icon.png">
   <link rel="stylesheet" type="text/css" href="css/sign-up.css">
+  <script src="js/signup.js"></script>
 </head>
 
 <body>
@@ -32,32 +33,32 @@
             <div id="form-main-wrapper">
               <div class="form-inp-wrapper">
                 <label for="inp_first_name">FIRST NAME</label>
-                <input type="text" id="inp_first_name" name="first_name">
+                <input type="text" id="inp_first_name" name="first_name" required>
               </div>
 
               <div class="form-inp-wrapper">
                 <label for="inp_last_name">LAST NAME</label>
-                <input type="text" id="inp_last_name" name="last_name">
+                <input type="text" id="inp_last_name" name="last_name" required>
               </div>
 
               <div class="form-inp-wrapper">
                 <label for="inp_email">EMAIL</label>
-                <input type="text" id="inp_email" name="email">
+                <input type="email" id="inp_email" name="email" required>
               </div>
 
               <div class="form-inp-wrapper">
                 <label for="inp_phone_number">PHONE NUMBER</label>
-                <input type="text" id="inp_phone_number" name="phone_number">
+                <input type="text" id="inp_phone_number" name="phone_number" pattern="(\d{3}[\-]\d{3}[\-]\d{4})" placeholder="123-456-7890" required>
               </div>
 
               <div class="form-inp-wrapper" id="password-wrapper">
                 <label for="inp_password">PASSWORD</label>
-                <input type="text" id="inp_password" name="password" class="error">
+                <input type="password" id="inp_password" name="password" class="error" required>
               </div>
 
               <div class="form-inp-wrapper" id="confirm-password-wrapper">
                 <label for="inp_confirm_password">CONFIRM PASSWORD</label>
-                <input type="text" id="inp_confirm_password" name="confirm_password" class="error">
+                <input type="password" id="inp_confirm_password" name="confirm_password" class="error" required>
               </div>
             </div>
           </div>
